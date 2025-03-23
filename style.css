@@ -95,7 +95,7 @@ a:hover {
 
 /* projects */
 .projects{
-  margin-top: 40px;
+  margin-top: 50px;
   width: 100%;
 }
 .project-container{
@@ -155,8 +155,10 @@ img {
 
 @media (max-width: 768px) {
   nav {
-    height: 10vh;
-    padding: 15px;
+    height: 100%;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
   }
   main {
     padding: 18px;
@@ -172,7 +174,7 @@ img {
   }
 
   .project-container h1{
-    font-size: 30px;
+    font-size: 22px;
     padding: 20px;
   }
   .blog {

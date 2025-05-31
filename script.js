@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let body = document.querySelector("body");
   let home = document.querySelector(".home-info");
   let h1 = document.querySelectorAll("h1");
-  let a = document.querySelectorAll("a");
+  let a = document.querySelectorAll(".alinks");
   let p = document.querySelectorAll("p");
   let icon = document.querySelector("img");
 

@@ -33,7 +33,7 @@ nav {
   align-items: center;
   margin: 0 auto;
 }
-.button-toggle{
+.button-toggle {
   margin: auto 30px;
 }
 
@@ -94,50 +94,67 @@ a:hover {
 }
 
 /* projects */
-.projects{
+.projects {
   margin-top: 50px;
   width: 100%;
 }
-.project-container{
+.project-container {
   margin-top: 10px;
   border-radius: 10px;
   height: 500px;
   width: 100%;
+  position: relative;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: blur(2px);
+  /* filter: blur(2px); */
   transition: all 0.3s ease-in-out;
-
+}
+.addingSoon{
+  padding-left: 10px;
+  position: absolute;
+  bottom: 20px;
+  color: #000;
 }
 
-.project-container a{
-  font-family:monospace;
+.project-main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow-y: scroll;
+}
+
+.project-main li a {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: black;
 }
 
-.project-container:hover{
+.project-main li a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-container:hover {
   transition: all 0.3s ease-in-out;
   filter: none;
 }
 
-
-
-.construction-icon{
-  height: 20px;
-  width: 20px;
+.projectShow {
+  filter: invert(0);
+  height: 200px;
+  width: 200px;
+  background-color: black;
 }
-
 /* footer */
 
-footer{
+footer {
   width: 100%;
   color: #000;
   text-align: center;
 }
-footer p{
+footer p {
   font-size: 14px;
   text-decoration: underline;
 }
@@ -154,7 +171,7 @@ img {
 
 /* responsive */
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   nav {
     height: 100%;
     padding-right: 0px;
@@ -167,14 +184,26 @@ img {
   .home-info h1 {
     font-size: 30px;
   }
-  .projects h1{
+  .projects h1 {
     font-size: 30px;
   }
-  .project-container{
+  .project-container {
     height: 400px;
   }
+  .project-main {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
 
-  .project-container h1{
+  .projectShow {
+    gap: 20px;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+  }
+  .project-container h1 {
     font-size: 22px;
     padding: 20px;
   }
@@ -185,19 +214,17 @@ img {
   }
 }
 
-
-
 /* scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: var(--scollbar-bg, white);
   /* border-radius: 10px; */
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb, #1a1a1a);
   border-radius: 10px;
 }

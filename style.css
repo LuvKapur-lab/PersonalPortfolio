@@ -104,6 +104,7 @@ a:hover {
   height: 500px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 
   /* filter: blur(2px); */
   transition: all 0.3s ease-in-out;
@@ -120,7 +121,6 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  overflow-y: scroll;
 }
 
 .project-main li a {
@@ -142,7 +142,6 @@ a:hover {
 }
 
 .projectShow {
-  filter: invert(0);
   height: 200px;
   width: 200px;
   background-color: black;
